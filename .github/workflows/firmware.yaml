@@ -22,7 +22,7 @@ on:
         default: false
       teacup_only:
         type: boolean
-        description: 'Only build Tea Cup profile'
+        description: 'Only build Fesdia profile'
         required: false
         default: false
       debug_enabled:
@@ -124,7 +124,7 @@ jobs:
         id: set-matrix
         run: |
           if [[ "${{ github.event.inputs.teacup_only }}" == 'true' ]]; then
-            CONFIGS=$(find configs/cameras/ -type f | sort | awk -F '/' '{print $(NF)}' | awk NF | grep 'teacup')
+            CONFIGS=$(find configs/cameras/ -type f | sort | awk -F '/' '{print $(NF)}' | awk NF | grep 'fesdia')
           else
             CONFIGS=$(find configs/cameras/ -type f | sort | awk -F '/' '{print $(NF)}' | awk NF)
           fi
