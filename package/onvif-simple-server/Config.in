@@ -5,4 +5,4 @@ config BR2_PACKAGE_ONVIF_SIMPLE_SERVER
 	  onvif_simple_server is a C light implementation of an onvif
 	  server intended for use in resource-constrained devices
 
-	  https://github.com/roleoroleo/onvif_simple_server
+	  https://github.com/tERB00/onvif_simple_server
